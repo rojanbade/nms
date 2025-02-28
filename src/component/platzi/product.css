@@ -1,0 +1,79 @@
+.product-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-container h1 {
+  margin-bottom: 20px;
+}
+
+.product-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.product-container button:hover {
+  background-color: #0056b3;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.product-grid li {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.product-grid li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-grid h3 {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.product-grid p {
+  margin: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.product-grid h1 {
+  margin: 10px;
+  font-size: 1.5rem;
+  color: #28a745; /* Green color for price */
+  font-weight: bold; /* Make the price stand out */
+  margin-bottom: 20px;
+}
+
+.product-grid p {
+  margin: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
