@@ -1,0 +1,38 @@
+export const STUDENT = [
+  {
+    id: 1,
+    name: "Ayush Shrestha",
+    course: "React JS",
+    duration: "3 months",
+    fees: 10000,
+    phone: 9808123345,
+    email: "ayush@gmail.com",
+  },
+  {
+    id: 2,
+    name: "Prajal Thapa",
+    course: "React JS",
+    duration: "3 months",
+    fees: 10000,
+    phone: 9849234554,
+    email: "prajal@gmail.com",
+  },
+  {
+    id: 3,
+    name: "Rina Shrestha",
+    course: "React JS",
+    duration: "3 months",
+    fees: 10000,
+    phone: 9808123345,
+    email: "rina@gmail.com",
+  },
+  {
+    id: 4,
+    name: "Mina Thapa",
+    course: "React JS",
+    duration: "3 months",
+    fees: 10000,
+    phone: 9849234554,
+    email: "mina@gmail.com",
+  },
+];
