@@ -16,17 +16,32 @@ const Platzi = () => {
       });
   }, []);
 
-  console.log({ products });
   return (
-    <div>
-      <h1>Products</h1>
-      <button
-        onClick={() => {
-          navigate("/product/add");
+    <div style={{ padding: "0 80px" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
         }}
       >
-        Add Product
-      </button>
+        <h1>Products</h1>
+        <button
+          style={{
+            height: "40px",
+            padding: "0 20px",
+            backgroundColor: "tomato",
+            color: "white",
+            border: "none",
+            borderRadius: "5px",
+          }}
+          onClick={() => {
+            navigate("/product/add");
+          }}
+        >
+          Add Product
+        </button>
+      </div>
 
       <div className="container" style={{ display: "flex", flexWrap: "wrap" }}>
         {products.length > 0 &&
