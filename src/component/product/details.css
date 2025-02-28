@@ -1,0 +1,60 @@
+/* Full-page container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background color */
+  text-align: center;
+}
+
+/* Product image */
+.container img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; /* Limit image height */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px;
+}
+
+/* Product title */
+.container h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333; /* Dark text color */
+}
+
+/* Product price */
+.container h1 {
+  font-size: 1.5rem;
+  color: #28a745; /* Green color for price */
+  font-weight: bold; /* Make the price stand out */
+  margin-bottom: 20px;
+}
+
+/* Product description */
+.container p {
+  font-size: 1rem;
+  color: #555; /* Gray text color */
+  max-width: 600px; /* Limit description width */
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container h3 {
+    font-size: 1.5rem; /* Smaller title on mobile */
+  }
+
+  .container h1 {
+    font-size: 1.25rem; /* Smaller price on mobile */
+  }
+
+  .container p {
+    font-size: 0.9rem; /* Smaller description on mobile */
+  }
+}
