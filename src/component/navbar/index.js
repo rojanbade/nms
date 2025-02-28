@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
@@ -8,16 +8,33 @@ const Navbar = () => {
         listStyle: "none",
         display: "flex",
         justifyContent: "space-around",
+        borderBottom: "1px solid #ccc",
+        paddingBottom: "10px ",
       }}
     >
       <li>
-        <Link to="/">Home</Link>
+        <NavLink
+          style={{ textDecoration: "none", fontSize: "20px", color: "black" }}
+          to="/"
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <Link to="/todo">Todo</Link>
+        <NavLink
+          style={{ textDecoration: "none", fontSize: "20px", color: "black" }}
+          to="/todo"
+        >
+          Todo
+        </NavLink>
       </li>
       <li>
-        <Link to="/lifting">Lifting</Link>{" "}
+        <NavLink
+          style={{ textDecoration: "none", fontSize: "20px", color: "black" }}
+          to="/lifting"
+        >
+          Lifting
+        </NavLink>
       </li>
     </ul>
   );
