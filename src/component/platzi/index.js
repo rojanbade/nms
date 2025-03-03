@@ -65,7 +65,7 @@ const Platzi = () => {
                 />
                 <h3>{product.title}</h3>
                 <p>{product.description}</p>
-                <h1>{product.price}</h1>
+                <h1>$ {product.price}</h1>
               </div>
             );
           })}
