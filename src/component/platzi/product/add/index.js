@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "./form.css";
 
 const AddProduct = () => {
   const [form, setForm] = useState({
@@ -58,8 +59,11 @@ const AddProduct = () => {
 
   console.log({ categories });
   return (
-    <div>
+    <div className="container-product">
+      <h1>Add Product</h1>
       <form onSubmit={handleSubmit}>
+        <label>Title</label>
+        <br />
         <input
           type="text"
           placeholder="Title"
@@ -68,6 +72,9 @@ const AddProduct = () => {
           onChange={handleChange}
         />
         <br />
+        <label>Price</label>
+        <br />
+
         <input
           type="number"
           placeholder="Price"
@@ -76,6 +83,9 @@ const AddProduct = () => {
           onChange={handleChange}
         />
         <br />
+        <label>Description</label>
+        <br />
+
         <input
           type="text"
           placeholder="Description"
@@ -84,8 +94,13 @@ const AddProduct = () => {
           onChange={handleChange}
         />
         <br />
+        <label>Image</label>
+        <br />
         <input type="file" placeholder="Image" />
         <br />
+        <label>Category</label>
+        <br />
+
         <select
           name="categoryId"
           value={form.categoryId}

@@ -1,0 +1,33 @@
+.container-product {
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 55rem;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+input,
+select {
+  width: 50rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
